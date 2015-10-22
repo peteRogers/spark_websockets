@@ -46,8 +46,8 @@ public:
   typedef void (*OnOpen)(WebSocketClient client);
   typedef void (*OnClose)(WebSocketClient client, int code, char* message);
   typedef void (*OnError)(WebSocketClient client, char* message);
-  void connect(const char hostname[], int port = 80, const char protocol[] = NULL, const char path[] = "/");
-  void connect(const byte host[], int port = 80, const char protocol[] = NULL, const char path[] = "/");
+  void connect(const char hostname[], int port = 3939, const char protocol[] = NULL, const char path[] = "/");
+  void connect(const byte host[], int port = 3939, const char protocol[] = NULL, const char path[] = "/");
   bool connected();
   void disconnect();
   void monitor();
